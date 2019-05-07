@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<window xmlns="http://schemas.haulmont.com/cuba/screen/window.xsd"
+        caption="msg://editorCaption"
+        focusComponent="form"
+        messagesPack="com.company.lisdemo.web.lisfacfile">
+    <data>
+        <instance id="lisFacFileDc"
+                  class="com.company.lisdemo.entity.LisFacFile"
+                  view="_local">
+            <loader/>
+        </instance>
+    </data>
+    <dialogMode height="600"
+                width="800"/>
+    <layout expand="scrollBox" spacing="true">
+        <scrollBox id="scrollBox" spacing="true">
+            <form id="form" dataContainer="lisFacFileDc">
+                <column width="250px">
+                    <textField id="facAccreditationCodeField" property="facAccreditationCode"/>
+                    <dateField id="facAccreditationDateField" property="facAccreditationDate"/>
+                    <dateField id="facAccreditationExpireDateField" property="facAccreditationExpireDate"/>
+                    <textField id="facActionCodeField" property="facActionCode"/>
+                    <textField id="facAddrKeyField" property="facAddrKey"/>
+                    <textField id="facAdminField" property="facAdmin"/>
+                    <textField id="facAggStatusField" property="facAggStatus"/>
+                    <textField id="facAmb117NbrField" property="facAmb117Nbr"/>
+                    <textField id="facAmb1864NbrField" property="facAmb1864Nbr"/>
+                    <textField id="facAmb65PlusNbrField" property="facAmb65PlusNbr"/>
+                    <dateField id="facAnnual10MoDeferDateField" property="facAnnual10MoDeferDate"/>
+                    <textField id="facAnnual10MoVisitApprField" property="facAnnual10MoVisitAppr"/>
+                    <dateField id="facAnnual10MoVisitDateField" property="facAnnual10MoVisitDate"/>
+                    <dateField id="facAnnual22MoDeferDateField" property="facAnnual22MoDeferDate"/>
+                    <textField id="facAnnual22MoVisitApprField" property="facAnnual22MoVisitAppr"/>
+                    <dateField id="facAnnual22MoVisitDateField" property="facAnnual22MoVisitDate"/>
+                    <textField id="facAnnualVisitYearField" property="facAnnualVisitYear"/>
+                    <textField id="facBilingualField" property="facBilingual"/>
+                    <dateField id="facBillingDateField" property="facBillingDate"/>
+                    <dateField id="facCapIncClosedDateField" property="facCapIncClosedDate"/>
+                    <dateField id="facCapIncRecDateField" property="facCapIncRecDate"/>
+                    <textField id="facCapacityField" property="facCapacity"/>
+                    <textField id="facCfirsIdNbrField" property="facCfirsIdNbr"/>
+                    <textField id="facClientServedField" property="facClientServed"/>
+                    <dateField id="facClientServedApprDateField" property="facClientServedApprDate"/>
+                    <dateField id="facClosedDateField" property="facClosedDate"/>
+                    <dateField id="facClosedProcessDateField" property="facClosedProcessDate"/>
+                    <textField id="facCoNbrField" property="facCoNbr"/>
+                    <textField id="facComplaintField" property="facComplaint"/>
+                    <textField id="facDeficiencyField" property="facDeficiency"/>
+                    <textField id="facDoEvalCodeField" property="facDoEvalCode"/>
+                    <textField id="facDoNbrField" property="facDoNbr"/>
+                    <textField id="facDualField" property="facDual"/>
+                    <textField id="facDualNbrField" property="facDualNbr"/>
+                    <textField id="facEmailAddressField" property="facEmailAddress"/>
+                    <textField id="facFcrbPrgmNbrField" property="facFcrbPrgmNbr"/>
+                    <textField id="facFmRegionNbrField" property="facFmRegionNbr"/>
+                    <textField id="facGhIndicatorField" property="facGhIndicator"/>
+                    <dateField id="facGhLicEffDateField" property="facGhLicEffDate"/>
+                    <dateField id="facInactiveNoticeDateField" property="facInactiveNoticeDate"/>
+                    <dateField id="facInactiveStartDateField" property="facInactiveStartDate"/>
+                    <dateField id="facIncCapEffDateField" property="facIncCapEffDate"/>
+                    <dateField id="facLastDeferVisitDateField" property="facLastDeferVisitDate"/>
+                    <textField id="facLastDeferVisitReasonField" property="facLastDeferVisitReason"/>
+                    <dateField id="facLastFireClearDateField" property="facLastFireClearDate"/>
+                    <dateField id="facLastUpdDateField" property="facLastUpdDate"/>
+                    <dateField id="facLastVisitDateField" property="facLastVisitDate"/>
+                    <textField id="facLastVisitReasonField" property="facLastVisitReason"/>
+                    <textField id="facLegalActionIndicatorField" property="facLegalActionIndicator"/>
+                    <textField id="facLicCommentsField" property="facLicComments"/>
+                    <textField id="facLicComments2Field" property="facLicComments2"/>
+                    <dateField id="facLicEffDateField" property="facLicEffDate"/>
+                    <dateField id="facLicExpirDateField" property="facLicExpirDate"/>
+                    <dateField id="facLicFirstDateField" property="facLicFirstDate"/>
+                    <dateField id="facLicLastChangeDateField" property="facLicLastChangeDate"/>
+                    <textField id="facLicMailCityField" property="facLicMailCity"/>
+                    <textField id="facLicMailStateField" property="facLicMailState"/>
+                    <textField id="facLicMailStreetAddrField" property="facLicMailStreetAddr"/>
+                    <textField id="facLicMailZipCodeField" property="facLicMailZipCode"/>
+                    <textField id="facLicenseeNameField" property="facLicenseeName"/>
+                    <textField id="facLicenseeTypeField" property="facLicenseeType"/>
+                    <textField id="facLocIndicatorField" property="facLocIndicator"/>
+                    <textField id="facMailCityField" property="facMailCity"/>
+                    <textField id="facMailStateField" property="facMailState"/>
+                    <textField id="facMailStreetAddrField" property="facMailStreetAddr"/>
+                    <textField id="facMailZipCodeField" property="facMailZipCode"/>
+                    <dateField id="facMentalHealthDateField" property="facMentalHealthDate"/>
+                    <dateField id="facMentalHealthExpireDateField" property="facMentalHealthExpireDate"/>
+                    <dateField id="facMidYrDeferDateField" property="facMidYrDeferDate"/>
+                    <textField id="facMidYrVisitApprField" property="facMidYrVisitAppr"/>
+                    <dateField id="facMidYrVisitDateField" property="facMidYrVisitDate"/>
+                    <textField id="facNameField" property="facName"/>
+                    <textField id="facNbrNewField" property="facNbrNew"/>
+                    <textField id="facNonamb117NbrField" property="facNonamb117Nbr"/>
+                    <textField id="facNonamb1864NbrField" property="facNonamb1864Nbr"/>
+                    <textField id="facNonamb65PlusNbrField" property="facNonamb65PlusNbr"/>
+                    <textField id="facOldFfaNbrField" property="facOldFfaNbr"/>
+                    <dateField id="facOrigApplRecDateField" property="facOrigApplRecDate"/>
+                    <textField id="facPhoneNbrField" property="facPhoneNbr"/>
+                    <textField id="facPinField" property="facPin"/>
+                    <dateField id="facPlacementDateField" property="facPlacementDate"/>
+                    <textField id="facPlacementReadyField" property="facPlacementReady"/>
+                    <dateField id="facPlanOfOpApprovalDateField" property="facPlanOfOpApprovalDate"/>
+                    <dateField id="facPlanOfOpRecvDateField" property="facPlanOfOpRecvDate"/>
+                    <dateField id="facPostLicDeferDateField" property="facPostLicDeferDate"/>
+                    <textField id="facPostLicVisitApprField" property="facPostLicVisitAppr"/>
+                    <dateField id="facPostLicVisitDateField" property="facPostLicVisitDate"/>
+                    <dateField id="facPreLicVisitDateField" property="facPreLicVisitDate"/>
+                    <textField id="facPrimaryNbrField" property="facPrimaryNbr"/>
+                    <textField id="facRegionCoField" property="facRegionCo"/>
+                    <textField id="facRegionDoField" property="facRegionDo"/>
+                    <textField id="facRegionNbrField" property="facRegionNbr"/>
+                    <dateField id="facRenewalDeferDateField" property="facRenewalDeferDate"/>
+                    <textField id="facRenewalVisitApprField" property="facRenewalVisitAppr"/>
+                    <dateField id="facRenewalVisitDateField" property="facRenewalVisitDate"/>
+                    <textField id="facRequiredVisitField" property="facRequiredVisit"/>
+                    <textField id="facResCityField" property="facResCity"/>
+                    <textField id="facResStateField" property="facResState"/>
+                    <textField id="facResStreetAddrField" property="facResStreetAddr"/>
+                    <textField id="facResZipCodeField" property="facResZipCode"/>
+                    <dateField id="facRfhConvertDateField" property="facRfhConvertDate"/>
+                    <textField id="facSfmIdNbrField" property="facSfmIdNbr"/>
+                    <dateField id="facSodMatchDateField" property="facSodMatchDate"/>
+                    <textField id="facStatusField" property="facStatus"/>
+                    <textField id="facStreetSearchField" property="facStreetSearch"/>
+                    <dateField id="facStrtpAppDeniedDateField" property="facStrtpAppDeniedDate"/>
+                    <dateField id="facStrtpAppRecvDateField" property="facStrtpAppRecvDate"/>
+                    <textField id="facTypeField" property="facType"/>
+                    <textField id="facType999CaciIndicatorField" property="facType999CaciIndicator"/>
+                    <dateField id="facUnlicOrigInputDateField" property="facUnlicOrigInputDate"/>
+                    <textField id="isnLisFacFileField" property="isnLisFacFile"/>
+                    <textField id="systemDatetime1Field" property="systemDatetime1"/>
+                    <textField id="systemDatetimeCountField" property="systemDatetimeCount"/>
+                    <textField id="systemSecuid1Field" property="systemSecuid1"/>
+                    <textField id="systemSecuidCountField" property="systemSecuidCount"/>
+                </column>
+            </form>
+        </scrollBox>
+        <hbox id="editActions" spacing="true">
+            <button action="windowCommitAndClose"/>
+            <button action="windowClose"/>
+        </hbox>
+    </layout>
+</window>

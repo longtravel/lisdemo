@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<window xmlns="http://schemas.haulmont.com/cuba/screen/window.xsd"
+        caption="msg://editorCaption"
+        focusComponent="form"
+        messagesPack="com.company.lisdemo.web.lisfafile">
+    <data>
+        <instance id="lisFaFileDc"
+                  class="com.company.lisdemo.entity.LisFaFile"
+                  view="_local">
+            <loader/>
+        </instance>
+    </data>
+    <dialogMode height="600"
+                width="800"/>
+    <layout expand="editActions" spacing="true">
+        <form id="form" dataContainer="lisFaFileDc">
+            <column width="250px">
+                <textField id="faPerField" property="faPer"/>
+                <textField id="faActionCodeField" property="faActionCode"/>
+                <textField id="faDoNbrField" property="faDoNbr"/>
+                <dateField id="faEndDateField" property="faEndDate"/>
+                <textField id="faFacNbrField" property="faFacNbr"/>
+                <textField id="faFacTypeField" property="faFacType"/>
+                <dateField id="faLastUpdDateField" property="faLastUpdDate"/>
+                <textField id="faPersonnelTypeField" property="faPersonnelType"/>
+                <dateField id="faStartDateField" property="faStartDate"/>
+                <textField id="isnLisFaFileField" property="isnLisFaFile"/>
+            </column>
+        </form>
+        <hbox id="editActions" spacing="true">
+            <button action="windowCommitAndClose"/>
+            <button action="windowClose"/>
+        </hbox>
+    </layout>
+</window>

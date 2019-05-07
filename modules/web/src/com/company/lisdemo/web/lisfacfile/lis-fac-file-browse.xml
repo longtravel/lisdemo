@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<window xmlns="http://schemas.haulmont.com/cuba/screen/window.xsd"
+        caption="msg://browseCaption"
+        focusComponent="lisFacFilesTable"
+        messagesPack="com.company.lisdemo.web.lisfacfile">
+    <data readOnly="true">
+        <collection id="lisFacFilesDc"
+                    class="com.company.lisdemo.entity.LisFacFile"
+                    view="_local">
+            <loader id="lisFacFilesDl">
+                <query>
+                    <![CDATA[select e from lisdemo_LisFacFile e]]>
+                </query>
+            </loader>
+        </collection>
+    </data>
+    <dialogMode height="600"
+                width="800"/>
+    <layout expand="lisFacFilesTable"
+            spacing="true">
+        <filter id="filter"
+                applyTo="lisFacFilesTable"
+                dataLoader="lisFacFilesDl">
+            <properties include=".*"/>
+        </filter>
+        <table id="lisFacFilesTable"
+               width="100%"
+               dataContainer="lisFacFilesDc">
+            <actions>
+                <action id="create" type="create"/>
+                <action id="edit" type="edit"/>
+                <action id="remove" type="remove"/>
+            </actions>
+            <columns>
+                <column id="facAccreditationCode"/>
+                <column id="facAccreditationDate"/>
+                <column id="facAccreditationExpireDate"/>
+                <column id="facActionCode"/>
+                <column id="facAddrKey"/>
+                <column id="facAdmin"/>
+                <column id="facAggStatus"/>
+                <column id="facAmb117Nbr"/>
+                <column id="facAmb1864Nbr"/>
+                <column id="facAmb65PlusNbr"/>
+                <column id="facAnnual10MoDeferDate"/>
+                <column id="facAnnual10MoVisitAppr"/>
+                <column id="facAnnual10MoVisitDate"/>
+                <column id="facAnnual22MoDeferDate"/>
+                <column id="facAnnual22MoVisitAppr"/>
+                <column id="facAnnual22MoVisitDate"/>
+                <column id="facAnnualVisitYear"/>
+                <column id="facBilingual"/>
+                <column id="facBillingDate"/>
+                <column id="facCapIncClosedDate"/>
+                <column id="facCapIncRecDate"/>
+                <column id="facCapacity"/>
+                <column id="facCfirsIdNbr"/>
+                <column id="facClientServed"/>
+                <column id="facClientServedApprDate"/>
+                <column id="facClosedDate"/>
+                <column id="facClosedProcessDate"/>
+                <column id="facCoNbr"/>
+                <column id="facComplaint"/>
+                <column id="facDeficiency"/>
+                <column id="facDoEvalCode"/>
+                <column id="facDoNbr"/>
+                <column id="facDual"/>
+                <column id="facDualNbr"/>
+                <column id="facEmailAddress"/>
+                <column id="facFcrbPrgmNbr"/>
+                <column id="facFmRegionNbr"/>
+                <column id="facGhIndicator"/>
+                <column id="facGhLicEffDate"/>
+                <column id="facInactiveNoticeDate"/>
+                <column id="facInactiveStartDate"/>
+                <column id="facIncCapEffDate"/>
+                <column id="facLastDeferVisitDate"/>
+                <column id="facLastDeferVisitReason"/>
+                <column id="facLastFireClearDate"/>
+                <column id="facLastUpdDate"/>
+                <column id="facLastVisitDate"/>
+                <column id="facLastVisitReason"/>
+                <column id="facLegalActionIndicator"/>
+                <column id="facLicComments"/>
+                <column id="facLicComments2"/>
+                <column id="facLicEffDate"/>
+                <column id="facLicExpirDate"/>
+                <column id="facLicFirstDate"/>
+                <column id="facLicLastChangeDate"/>
+                <column id="facLicMailCity"/>
+                <column id="facLicMailState"/>
+                <column id="facLicMailStreetAddr"/>
+                <column id="facLicMailZipCode"/>
+                <column id="facLicenseeName"/>
+                <column id="facLicenseeType"/>
+                <column id="facLocIndicator"/>
+                <column id="facMailCity"/>
+                <column id="facMailState"/>
+                <column id="facMailStreetAddr"/>
+                <column id="facMailZipCode"/>
+                <column id="facMentalHealthDate"/>
+                <column id="facMentalHealthExpireDate"/>
+                <column id="facMidYrDeferDate"/>
+                <column id="facMidYrVisitAppr"/>
+                <column id="facMidYrVisitDate"/>
+                <column id="facName"/>
+                <column id="facNbrNew"/>
+                <column id="facNonamb117Nbr"/>
+                <column id="facNonamb1864Nbr"/>
+                <column id="facNonamb65PlusNbr"/>
+                <column id="facOldFfaNbr"/>
+                <column id="facOrigApplRecDate"/>
+                <column id="facPhoneNbr"/>
+                <column id="facPin"/>
+                <column id="facPlacementDate"/>
+                <column id="facPlacementReady"/>
+                <column id="facPlanOfOpApprovalDate"/>
+                <column id="facPlanOfOpRecvDate"/>
+                <column id="facPostLicDeferDate"/>
+                <column id="facPostLicVisitAppr"/>
+                <column id="facPostLicVisitDate"/>
+                <column id="facPreLicVisitDate"/>
+                <column id="facPrimaryNbr"/>
+                <column id="facRegionCo"/>
+                <column id="facRegionDo"/>
+                <column id="facRegionNbr"/>
+                <column id="facRenewalDeferDate"/>
+                <column id="facRenewalVisitAppr"/>
+                <column id="facRenewalVisitDate"/>
+                <column id="facRequiredVisit"/>
+                <column id="facResCity"/>
+                <column id="facResState"/>
+                <column id="facResStreetAddr"/>
+                <column id="facResZipCode"/>
+                <column id="facRfhConvertDate"/>
+                <column id="facSfmIdNbr"/>
+                <column id="facSodMatchDate"/>
+                <column id="facStatus"/>
+                <column id="facStreetSearch"/>
+                <column id="facStrtpAppDeniedDate"/>
+                <column id="facStrtpAppRecvDate"/>
+                <column id="facType"/>
+                <column id="facType999CaciIndicator"/>
+                <column id="facUnlicOrigInputDate"/>
+                <column id="isnLisFacFile"/>
+                <column id="systemDatetime1"/>
+                <column id="systemDatetimeCount"/>
+                <column id="systemSecuid1"/>
+                <column id="systemSecuidCount"/>
+            </columns>
+            <rowsCount/>
+            <buttonsPanel id="buttonsPanel"
+                          alwaysVisible="true">
+                <button id="createBtn" action="lisFacFilesTable.create"/>
+                <button id="editBtn" action="lisFacFilesTable.edit"/>
+                <button id="removeBtn" action="lisFacFilesTable.remove"/>
+            </buttonsPanel>
+        </table>
+        <hbox id="lookupActions" spacing="true" visible="false">
+            <button action="lookupSelectAction"/>
+            <button action="lookupCancelAction"/>
+        </hbox>
+    </layout>
+</window>
