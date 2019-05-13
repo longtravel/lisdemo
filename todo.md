@@ -25,11 +25,12 @@
     dataGrid will render if data is not null (if state is updated and filtered data is not null)
 
 ======
-+ Click on an edit button to update a facility
-+ Duplicate functionality to find a person
-+ Duplicate the facility page to create an update person page
-+ Click on an edit button to edit an existing person
-+ **Do not do “add” capability yet**
+5/13/2019
+- change state to be cleaner
+- add error handling
++ add button to edit and update
++ on new update page, only allow changing name(?) or some other field
+    
 + Add testing
 + ~~Add UI improvements: logo, and cwds stsyle sheet~~
 + Show both generic UI and React UI user interfaces
@@ -63,6 +64,4 @@ $ docker run -d --name=postgresql_data -p 5432:5432 cwds/postgresql_data
 $ npm run start # it should start on localhost:3000
 
 to get an access token to put in teh header:
-$ curl -H "Content-type: application/x-www-form-urlencoded" -H "Authorization: Basic Y2xpZW50OnNlY3JldA==" 
--d "grant_type=password&username=admin&password=admin" 
-http://localhost:8080/app/rest/v2/oauth/token
+$ curl -H "Content-type: application/x-www-form-urlencoded" -H "Authorization: Basic Y2xpZW50OnNlY3JldA==" -d "grant_type=password&username=admin&password=admin" http://localhost:8080/app/rest/v2/oauth/token
