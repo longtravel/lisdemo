@@ -1,13 +1,25 @@
-**TODO**:
+==== **TODO** 7/12/19=========
+1. evaluate testing tools and possibly add cucumber?
+    - get lisdemo running again
+    - add unit testing
+    - add cucumber 
+    - build and deploy to AWS with pipeline off of github, using fargate
+    - run jmeter test to show scalability? (optional)
+    
+1. build deployable container to use pipeline to AWS. Add callback to github, using fargate
+1. try out react responsive UI for standalone mobile client
+1. import DB2 into HDFS (using Sqoop?)
+
+===========
+
 + build new case data model
     + ~~get generic UI working~~
     + ~~get case, talking to person~~
     + ~~get service attached to case~~
     + ~~fix generic UI to have logo~~
 + ~~build REST API and view in swagger~~
-+ ~~build react responsive UI for mobile~~
-
 + ~~add flowable workflow engine~~
++ ~~try out react responsive UI for standalone mobile client
 
 + ~~generate a model and UI for an existing DB. https://doc.cuba-platform.com/studio/?_ga=2.104222466.348203825.1554733758-1508817889.1553809242#generate_model~~
     
@@ -39,7 +51,7 @@
 + evaluate testing tools and possibly add cucumber?
 
 
-+ build deployable pipeline to AWS
++ build deployable container to use pipeline to AWS
     + add to github
     + build jenkins to build and deploy as docker-compose (or lambda!!)
 + debug the project
