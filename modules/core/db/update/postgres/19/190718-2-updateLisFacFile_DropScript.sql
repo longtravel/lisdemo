@@ -1,0 +1,12 @@
+alter table lis_fac_file drop column FAC_LICENSEE_TYPE__U69025 cascade ;
+alter table lis_fac_file drop column FAC_ACTION_CODE__U67723 cascade ;
+alter table lis_fac_file drop column FAC_LEGAL_ACTION_INDICATOR__U52344 cascade ;
+alter table lis_fac_file drop column FAC_AGG_STATUS__U74800 cascade ;
+alter table lis_fac_file drop column FAC_DUAL_ID__U04155 cascade ;
+alter table lis_fac_file drop column FAC_GH_INDICATOR__U89640 cascade ;
+alter table lis_fac_file drop column FAC_COMPLAINT__U00275 cascade ;
+alter table lis_fac_file drop column FAC_DEFICIENCY__U40115 cascade ;
+alter table lis_fac_file drop column FAC_PLACEMENT_READY__U25929 cascade ;
+alter table lis_fac_file drop column FAC_REQUIRED_VISIT__U39615 cascade ;
+alter table lis_fac_file drop column FAC_LOC_INDICATOR__U86552 cascade ;
+alter table lis_fac_file drop column FAC_TYPE999_CACI_INDICATOR__U04944 cascade ;

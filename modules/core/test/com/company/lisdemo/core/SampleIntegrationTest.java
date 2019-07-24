@@ -50,4 +50,17 @@ public class SampleIntegrationTest {
             assertEquals(1, users.size());
         }
     }
+
+    @Test
+    public void testFetchFacilityREST() {
+        // start up a restful client
+        // get the resource
+        // establish a security token
+        assertEquals(1, 1);
+    }
+
+    @Test
+    public void testLisFacFile() {
+        assertEquals(1,1);
+    }
 }
